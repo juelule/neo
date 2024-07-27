@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Example post</title>
+
+		<meta name="writer" content="{{YOUR NAME HERE}}">
+
+		<meta name="description" content="An example post for your blog.">
+
+		<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body>
+		<a href="#content" id="skip-link">Skip to main content</a>
+
+		<div id="container">
+			<header id="header">...</header>
+
+			<nav class="post-nav"></nav>
+
+			<article id="content">
+				<h1>Example post</h1>
+
+				<time id="post-date"></time>
+
+				<hr/>
+
+				<p>This example post includes the Here's an example image with a caption:</p>
+
+				<figure>
+					<img class="centre" src="../images/i am a scientist - youkai hunter 5_5.png" alt="Manga panel of a man saying &quot;I am a scientist who has trusted in human science and industrial civilization. But what now?&quot;">
+
+					<figcaption>Here's what an image caption looks like. If you don't need to caption the image, don't include the <code>&lt;figure&gt;</code> or <code>&lt;figcaption&gt;</code> elements.</figcaption>
+				</figure>
+
+				<p>And here's an example image gallery. Click a numbered button to see that image (all galleries start showing the first image).</p>
+
+				<div class="gallery">
+					<div class="gallery-controls">
+						<h4>Gallery title</h4>
+
+						<label for="gallery-1-1"></label>
+
+						<label for="gallery-1-2"></label>
+
+						<label for="gallery-1-3"></label>
+					</div>
+
+					<div class="gallery-images">
+						<input type="radio" id="gallery-1-1" name="gallery-1" checked="">
+
+						<figure>
+							<img src="../images/alpine.jpg" alt="A photo of alpine mountains, blanketed in misty forests.">
+
+							<figcaption>Here's the caption for the first image (alpine mountains).</figcaption>
+						</figure>
+
+						<input type="radio" id="gallery-1-2" name="gallery-1">
+
+						<figure>
+							<img src="../images/cat.jpg" alt="A close-up photo of an older kitten with brown and white fur, looking directly into the camera.">
+
+							<figcaption>And the caption for the second image (a cat).</figcaption>
+						</figure>
+
+						<input type="radio" id="gallery-1-3" name="gallery-1">
+
+						<figure>
+							<img src="../images/eiffel-tower.jpg" alt="A photo of the Eiffel Tower on a grey winter's day.">
+
+							<figcaption>And finally, the third image's (the Eiffel Tower) caption.</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<p>The gallery CSS takes care of the label and caption numbers.</p>
+
+				<p>You can add more images to the gallery by adding more <code>&lt;input /&gt;</code> and <code>&lt;figure&gt;</code> elements (including the <code>&lt;img /&gt;</code> and <code>&lt;figcaption&gt;</code> inside the figure) and adding matching <code>&lt;label&gt;</code> elements in the <code>gallery-controls</code> element.</p>
+
+				<p>Each gallery on a single page needs a unique name. Each label-input pair needs a unique ID.</p>
+
+				<p>These galleries are CSS-only, no javascript.</p>
+
+				<p>If you don't plan on using image galleries, or have a different solution, then you can cut about 1.3 KB from the default Zonelots stylesheet by deleting the section headed "<span class="uppercase">gallery</span>".</p>
+			</article>
+
+			<dl id="post-meta">
+			</dl>
+
+			<nav class="post-nav"></nav>
+
+			<footer id="footer"></footer>
+		</div> <!-- end of div id="container" -->
+
+		<script src="../script.js"></script>
+	</body>
+</html>

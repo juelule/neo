@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>{{YOUR BLOG POST TITLE HERE}}</title>
+
+		<meta name="writer" content="{{YOUR NAME HERE}}">
+
+		<meta name="description" content="{{YOUR BLOG POST DESCRIPTION HERE}}">
+
+		<link rel="icon" href="../images/favicon.png" type="image/x-icon">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="../styles/style.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+
+	<body>
+		<a href="#content" id="skip-link">Skip to main content</a>
+
+		<div id="container">
+			<header id="header">...</header>
+
+			<nav class="post-nav"></nav>
+
+			<article id="content">
+				<h1>{{YOUR BLOG POST TITLE HERE}}</h1>
+
+				<time id="post-date"></time>
+
+				<hr/>
+
+				<p>Your post should go inside this <code>&lt;article&gt;</code> element. Below is the HTML for images with captions, and for Zonelot image galleries.</p>
+
+				<figure>
+					<img class="centre" src="../images/" alt="">
+
+					<figcaption></figcaption>
+				</figure>
+
+				<div class="gallery">
+					<div class="gallery-controls">
+						<h4></h4>
+
+						<label for="gallery-1-1"></label>
+
+						<label for="gallery-1-2"></label>
+
+						<label for="gallery-1-3"></label>
+					</div>
+
+					<div class="gallery-images">
+						<input type="radio" id="gallery-1-1" name="gallery-1" checked="">
+
+						<figure>
+							<img src="../images/" alt="">
+
+							<figcaption></figcaption>
+						</figure>
+
+						<input type="radio" id="gallery-1-2" name="gallery-1">
+
+						<figure>
+							<img src="../images/" alt="">
+
+							<figcaption></figcaption>
+						</figure>
+
+						<input type="radio" id="gallery-1-3" name="gallery-1">
+
+						<figure>
+							<img src="../images/" alt="">
+
+							<figcaption></figcaption>
+						</figure>
+					</div>
+				</div>
+			</article>
+
+			<dl id="post-meta">
+			</dl>
+
+			<nav class="post-nav"></nav>
+
+			<footer id="footer"></footer>
+		</div> <!-- end of div id="container" -->
+
+		<script src="../script.js"></script>
+	</body>
+</html>
